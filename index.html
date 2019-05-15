@@ -7,33 +7,33 @@
 <body>
 
 <header class="main-header">
-  <nav class="main-header__navigation">
-    <a class="main-header__logo">
-      <img src="#" alt="Логотим магазина Глейси">
+  <nav class="navigation">
+    <a class="navigation__logo">
+      <img src="img/logo.svg" width="154" height="64" alt="Логотим магазина Глейси">
     </a>
-    <ul class="main-header__site-navigation-list">
-      <li>
+    <ul class="menu__list">
+      <li class="menu__item">
         <a href="catalog.html">Каталог</a>
-        <ul class="main-header__submenu-list">
-          <li class="main-header__header">Новинки</li>
-          <li><a href="#">Сливочное</a></li>
-          <li><a href="#">Щербеты</a></li>
-          <li><a href="#">Фруктовый лед</a></li>
-          <li><a href="#">Мелорин</a></li>
+        <ul class="submenu__list">
+          <li class="submenu__item submenu__item--header">Новинки</li>
+          <li class="submenu__item"><a href="#">Сливочное</a></li>
+          <li class="submenu__item"><a href="#">Щербеты</a></li>
+          <li class="submenu__item"><a href="#">Фруктовый лед</a></li>
+          <li class="submenu__item"><a href="#">Мелорин</a></li>
         </ul>
       </li>
-      <li><a href="#">Доставка и оплата</a></li>
-      <li><a href="#">О Компании</a></li>
+      <li class="menu__item"><a href="#">Доставка и оплата</a></li>
+      <li class="menu__item"><a href="#">О Компании</a></li>
     </ul>
-    <div class="main-header__user-navigation">
-      <div class="main-header__user-search">
-        <a class="main-header__btn main-header__btn-user-search" href="#">Поиск</a>
+    <div class="user-navigation">
+      <div class="user-navigation__item user-search">
+        <a class="user-search__btn btn" href="#">Поиск</a>
       </div>
-      <div class="main-header__user-login">
-        <a class="main-header__btn main-header__btn-user-login" href="#">Вход</a>
+      <div class="user-navigation__item user-login">
+        <a class="user-login__btn btn" href="#">Вход</a>
       </div>
-      <ul class="main-header__user-basket-list">
-        <li><a class="main-header__btn main-header__btn-user-basket" href="#">Пусто</a></li>
+      <ul class="user-navigation__item user-basket">
+        <li><a class="user-basket__btn btn" href="#">Пусто</a></li>
       </ul>
     </div>
   </nav>
@@ -44,15 +44,78 @@
   <section class="slider"></section>
   <section class="banners">
     <h2 class="visually-hidden">Реклама магазина Глейси</h2>
+    <div class="banners__wrapper">
+      <div class="banners__item banner-raspberries">
+        <h3>Малинка даром!</h3>
+        <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового
+          варенья бесплатно.</p>
+        <a class="banner-raspberries__btn btn" href="#">Хочу варенье</a>
+      </div>
+      <div class="banners__item banner-chocolate">
+        <h3>Шоколадки даром!</h3>
+        <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки
+          совершенно бесплатно.</p>
+        <a class="banner-chocolate__btn btn" href="#">Хочу варенье</a>
+      </div>
+    </div>
   </section>
   <section class="hits">
     <h2 class="visually-hidden">Хиты продаж</h2>
-    <!--  Хиты продаж  -->
+    <ul class="hits__list">
+      <li class="hits__item hit-card">
+        <h3>
+          <a href="img/orange-ice-cream.jpg">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+        </h3>
+        <p class="hit-card__image">
+          <a href="img/orange-ice-cream.jpg">
+            <img src="img/orange-ice-cream.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          </a>
+        </p>
+        <p class="hit-card__price">310 &#8381;<span class="hit-card__weight">/кг</span>
+        <p class="hit-card__label">Хит продаж</p>
+      </li>
+      <li class="hits__item hit-card">
+        <h3>
+          <a href="img/coffee-ice-cream.jpg">Сливочно-кофейное с кусочками шоколада</a>
+        </h3>
+        <p class="hit-card__image">
+          <a href="img/coffee-ice-cream.jpg">
+            <img src="img/coffee-ice-cream.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+          </a>
+        </p>
+        <p class="hit-card__price">380 &#8381;<span class="hit-card__weight">/кг</span>
+        <p class="hit-card__label">Хит продаж</p>
+      </li>
+      <li class="hits__item hit-card">
+        <h3>
+          <a href="img/strawberry-ice-cream.jpg">Сливочно-клубничное с присыпкой из белого шоколада</a>
+        </h3>
+        <p class="hit-card__image">
+          <a href="img/strawberry-ice-cream.jpg">
+            <img src="img/strawberry-ice-cream.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          </a>
+        </p>
+        <p class="hit-card__price">355 &#8381;<span class="hit-card__weight">/кг</span>
+        <p class="hit-card__label">Хит продаж</p>
+      </li>
+      <li class="hits__item hit-card">
+        <h3>
+          <a href="img/cream-ice-cream.jpg">Сливочное крем-брюле с карамельной подливкой</a>
+        </h3>
+        <p class="hit-card__image">
+          <a href="img/cream-ice-cream.jpg">
+            <img src="img/cream-ice-cream.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+          </a>
+        </p>
+        <p class="hit-card__price">415 &#8381;<span class="hit-card__weight">/кг</span>
+        <p class="hit-card__label">Хит продаж</p>
+      </li>
+    </ul>
   </section>
   <section class="promotion-products">
     <div class="promotion-products__inner">
       <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
-      <ul class="promotion-products__features-list">
+      <ul class="features__list">
         <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
           и проверенных временем технологий.</li>
         <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные
@@ -65,39 +128,43 @@
     </div>
   </section>
   <section class="news">
-    <article class="news__blog">
-      <h2>Новое в нашем блоге</h2>
-      <p class="news__methods">
-        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
-      </p>
-    </article>
-    <section class="news__distribution">
-      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
-        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <!--  Форма  -->
-    </section>
+    <div class="news__wrapper">
+      <div class="news__item article-preview">
+        <a class="article-preview__link" href="#">
+          <h2>Новое в нашем блоге</h2>
+          <p>10 способов сервировки фруктовых щербетов к столу</p>
+        </a>
+      </div>
+      <div class="news__item subscribe-form">
+        <p class="subscribe-form__description">
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
+          Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        </p>
+        <!--        <form action="#" method="post"></form>-->
+      </div>
+    </div>
   </section>
   <section class="map"></section>
 </main>
 
 <footer class="main-footer">
-  <section class="main-footer__social">
-    <ul class="main-footer__social-list">
-      <li><a class="main-footer__btn main-footer__btn-tvr" href="#"></a></li>
-      <li><a class="main-footer__btn main-footer__btn-inst" href="#"></a></li>
-      <li><a class="main-footer__btn main-footer__btn-fb" href="#"></a></li>
-      <li><a class="main-footer__btn main-footer__btn-vk" href="#"></a></li>
+  <section class="main-footer__item footer-social">
+    <ul class="footer-social__list">
+      <li><a class="footer-social__btn footer-social__btn--tvr" href="#"></a></li>
+      <li><a class="footer-social__btn footer-social__btn--inst" href="#"></a></li>
+      <li><a class="footer-social__btn footer-social__btn--fb" href="#"></a></li>
+      <li><a class="footer-social__btn footer-social__btn--vk" href="#"></a></li>
     </ul>
   </section>
-  <section class="main-footer__info">
-    <ul class="main-footer__info-list">
+  <section class="main-footer__item footer-info">
+    <ul class="footer-info__list">
       <li><a href="#">Для поставщиков</a></li>
       <li><a href="#">О производстве</a></li>
       <li><a href="#">Наши документы</a></li>
       <li><a href="#">Экологические стандарты</a></li>
     </ul>
   </section>
-  <section class="main-footer__copyright">
+  <section class="main-footer__item footer-copyright">
     <a href="https://htmlacademy.ru/intensive/htmlcss">HTML academy</a>
     <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
   </section>
