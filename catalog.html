@@ -27,34 +27,66 @@
       <li class="menu__item"><a href="#">О Компании</a></li>
     </ul>
     <div class="user-navigation">
-      <div class="user-navigation__item user-search">
-        <a class="user-navigation__btn btn" href="#">Поиск</a>
-      </div>
-      <div class="user-navigation__item user-login">
-        <a class="user-navigation__btn btn" href="#">Вход</a>
-      </div>
-      <ul class="user-navigation__item user-basket">
-        <li class="user-basket__item"><a class="user-navigation__btn btn" href="#">2 товара</a></li>
-        <!--    ??????????????????????????????????    -->
-        <li class="user-basket__item order">
-          <ul class="order__list">
-            <li class="order__item">
+      <ul class="user-navigation__list">
+        <li class="user-navigation__item">
+          <a class="user-navigation__link" href="#">Поиск</a>
+          <div class="tooltip search-form">
+            <form action="#" method="get">
+              <label for="search-field" class="visually-hidden">Поле поиска</label>
+              <input type="search" name="search" id="search-field" placeholder="Что ищем?">
+            </form>
+          </div>
+        </li>
+        <li class="user-navigation__item">
+          <a class="user-navigation__link" href="#">Вход</a>
+          <div class="tooltip login-form">
+            <form action="#" method="post">
               <p>
-                <span class="order__title">Пломбир с апельсиновым джемом</span>
-                <span class="order__count-item"> 1.5 кг. x <span class="order__price">200 руб.</span></span>
-                <span class="order__price-item">300 руб.</span>
+                <label for="login-form-email" class="visually-hidden">Электронная почта</label>
+                <input type="email" name="login-email" id="login-form-email" placeholder="Электронная почта">
               </p>
-            </li>
-            <li class="order__item">
               <p>
-                <span class="order__title">Клубничный пломбир с присыпкой из белого шоколада</span>
-                <span class="order__count-item"> 1.5 кг x <span class="order__price">300 руб.</span></span>
-                <span class="order__price-item">450 руб.</span>
+                <label for="login-form-password" class="visually-hidden">Пароль</label>
+                <input type="password" name="login-password" id="login-form-password" placeholder="Пароль">
               </p>
-            </li>
-          </ul>
-          <p class="order__total-price">Итого: 750 руб.</p>
-          <a href="#" class="order__btn btn">Оформить заказ</a>
+              <p>
+                <button type="submit" class="user-login__btn btn">Войти</button>
+                <a href="#" class="user-login__restore">Забыли пароль?</a>
+                <a href="#" class="user-login__restore">Новая регистрация</a>
+              </p>
+            </form>
+          </div>
+        </li>
+        <li class="user-navigation__item">
+          <a class="user-navigation__link" href="#">Пусто</a>
+          <div class="tooltip basket-block">
+            <ul class="basket-block__list">
+              <li class="basket-block__item order-item">
+                <button class="order-item__remove">Удалить товар</button>
+                <a class="order-item__image" href="#">
+                  <img src="img/orange-ice-cream-basket.jpg" alt="Пломбир с апельсиновым джемом">
+                </a>
+                <p class="order-item__header">Пломбир с апельсиновым джемом</p>
+                <p class="order-item__count">
+                  <span class="js-weight">1.5 кг.</span> x <span class="order-item__price js-price">200 руб.</span>
+                </p>
+                <p class="order-item__count-price">300 руб.</p>
+              </li>
+              <li class="basket-block__item">
+                <button class="order-item__remove">Удалить товар</button>
+                <a class="order-item__image" href="#">
+                  <img src="img/strawberry-ice-cream-basket.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                </a>
+                <p class="order-item__header">Клубничный пломбир с присыпкой из белого шоколада</p>
+                <p class="order-item__price-block">
+                  <span class="js-weight">1.5 кг.</span> x <span class="order-item__price js-price">300 руб.</span>
+                </p>
+                <p class="order-item__count-price">450 руб.</p>
+              </li>
+            </ul>
+            <p class="order__total-price">Итого: 750 руб.</p>
+            <a href="#" class="order__btn btn">Оформить заказ</a>
+          </div>
         </li>
       </ul>
     </div>
