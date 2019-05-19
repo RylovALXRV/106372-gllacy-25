@@ -13,11 +13,10 @@
     </a>
     <ul class="navigation__list menu">
       <li class="menu__item menu__item--current">
-        <a>Каталог</a>
+        <a href="#">Каталог</a>
         <ul class="menu__list submenu">
           <li class="submenu__item submenu__item--header">Новинки</li>
-          <!-- Так и не понял на какую страницу должен вести на catalog.html или внутреннюю страницу catalog/... -->
-          <li class="submenu__item"><a href="catalog.html">Сливочное</a></li>
+          <li class="submenu__item"><a>Сливочное</a></li>
           <li class="submenu__item"><a href="#">Щербеты</a></li>
           <li class="submenu__item"><a href="#">Фруктовый лед</a></li>
           <li class="submenu__item"><a href="#">Мелорин</a></li>
@@ -43,16 +42,16 @@
             <form action="#" method="post">
               <p>
                 <label for="login-form-email" class="visually-hidden">Электронная почта</label>
-                <input type="email" name="login-email" id="login-form-email" placeholder="Электронная почта">
+                <input type="email" name="email" id="login-form-email" placeholder="Электронная почта">
               </p>
               <p>
                 <label for="login-form-password" class="visually-hidden">Пароль</label>
-                <input type="password" name="login-password" id="login-form-password" placeholder="Пароль">
+                <input type="password" name="password" id="login-form-password" placeholder="Пароль">
               </p>
               <p>
-                <button type="submit" class="user-login__btn btn">Войти</button>
-                <a href="#" class="user-login__restore">Забыли пароль?</a>
-                <a href="#" class="user-login__restore">Новая регистрация</a>
+                <button type="submit" class="login-form__btn btn">Войти</button>
+                <a href="#" class="login-form__restore">Забыли пароль?</a>
+                <a href="#" class="login-form__restore">Новая регистрация</a>
               </p>
             </form>
           </div>
@@ -60,28 +59,28 @@
         <li class="user-navigation__item">
           <a class="user-navigation__link" href="#">Пусто</a>
           <div class="tooltip basket-block">
-            <ul class="basket-block__list">
-              <li class="basket-block__item order-item">
-                <button class="order-item__remove">Удалить товар</button>
-                <a class="order-item__image" href="#">
+            <ul class="basket-block__list order">
+              <li class="basket-block__item">
+                <button type="button" class="order__remove">Удалить товар</button>
+                <a class="order__image" href="#">
                   <img src="img/orange-ice-cream-basket.jpg" alt="Пломбир с апельсиновым джемом">
                 </a>
-                <p class="order-item__header">Пломбир с апельсиновым джемом</p>
-                <p class="order-item__count">
-                  <span class="js-weight">1.5 кг.</span> x <span class="order-item__price js-price">200 руб.</span>
+                <p class="order__header">Пломбир с апельсиновым джемом</p>
+                <p class="order__price-block">
+                  <span class="js-weight">1.5 кг.</span> x <span class="order__price js-price">200 руб.</span>
                 </p>
-                <p class="order-item__count-price">300 руб.</p>
+                <p class="order__count-price">300 руб.</p>
               </li>
               <li class="basket-block__item">
-                <button class="order-item__remove">Удалить товар</button>
-                <a class="order-item__image" href="#">
+                <button type="button" class="order__remove">Удалить товар</button>
+                <a class="order__image" href="#">
                   <img src="img/strawberry-ice-cream-basket.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада">
                 </a>
-                <p class="order-item__header">Клубничный пломбир с присыпкой из белого шоколада</p>
-                <p class="order-item__price-block">
-                  <span class="js-weight">1.5 кг.</span> x <span class="order-item__price js-price">300 руб.</span>
+                <p class="order__header">Клубничный пломбир с присыпкой из белого шоколада</p>
+                <p class="order__price-block">
+                  <span class="js-weight">1.5 кг.</span> x <span class="order__price js-price">300 руб.</span>
                 </p>
-                <p class="order-item__count-price">450 руб.</p>
+                <p class="order__count-price">450 руб.</p>
               </li>
             </ul>
             <p class="order__total-price">Итого: 750 руб.</p>

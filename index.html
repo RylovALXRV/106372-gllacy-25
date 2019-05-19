@@ -13,7 +13,7 @@
     </a>
     <ul class="navigation__list menu">
       <li class="menu__item">
-        <a href="catalog.html">Каталог</a>
+        <a href="#">Каталог</a>
         <ul class="menu__list submenu">
           <li class="submenu__item submenu__item--header">Новинки</li>
           <li class="submenu__item"><a href="#">Сливочное</a></li>
@@ -49,9 +49,9 @@
                 <input type="password" name="password" id="login-form-password" placeholder="Пароль">
               </p>
               <p>
-                <button type="submit" class="user-login__btn btn">Войти</button>
-                <a href="#" class="user-login__restore">Забыли пароль?</a>
-                <a href="#" class="user-login__restore">Новая регистрация</a>
+                <button type="submit" class="login-form__btn btn">Войти</button>
+                <a href="#" class="login-form__restore">Забыли пароль?</a>
+                <a href="#" class="login-form__restore">Новая регистрация</a>
               </p>
             </form>
           </div>
@@ -174,8 +174,8 @@
           </p>
           <form action="#" method="post">
             <p>
-              <label for="subscribe-form__email--field" class="visually-hidden">Электронная почта</label>
-              <input type="text" name="subscribe-form__email" id="subscribe-form__email--field">
+              <label for="subscribe-form-email" class="visually-hidden">Электронная почта</label>
+              <input type="email" name="email" id="subscribe-form-email">
             </p>
             <button type="submit">Отправить</button>
           </form>
@@ -225,7 +225,7 @@
       </p>
       <p>
         <label for="feedback-email" class="visually-hidden">Электронная почта</label>
-        <input type="text" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
+        <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
       </p>
       <p>
         <label for="feedback-wishes" class="visually-hidden">Пожелания</label>
