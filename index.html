@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Глейси</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -89,7 +92,7 @@
         <a class="ice-cream__btn btn" href="#">Давайте оба</a>
       </li>
     </ul>
-    <ul class="slider__list slider__controls">
+    <ul class="slider__controls">
       <li class="slider__item slider__item--current">
         <button type="button">Первая кнопка слайдера</button>
       </li>
@@ -122,7 +125,7 @@
     <h2 class="visually-hidden">Хиты продаж</h2>
     <ul class="hits__list">
       <li class="hits__item catalog-card">
-        <h3>
+        <h3 class="catalog-card__header">
           <a href="img/orange-ice-cream.jpg">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
         </h3>
         <a class="catalog-card__image" href="img/orange-ice-cream.jpg">
@@ -135,7 +138,7 @@
         <p class="catalog-card__label">Хит продаж</p>
       </li>
       <li class="hits__item catalog-card">
-        <h3>
+        <h3 class="catalog-card__header">
           <a href="img/coffee-ice-cream.jpg">Сливочно-кофейное с кусочками шоколада</a></h3>
         <a class="catalog-card__image" href="img/coffee-ice-cream.jpg">
           <img src="img/coffee-ice-cream.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -146,7 +149,7 @@
         <p class="catalog-card__label">Хит продаж</p>
       </li>
       <li class="hits__item catalog-card">
-        <h3>
+        <h3 class="catalog-card__header">
           <a href="img/strawberry-ice-cream.jpg">Сливочно-клубничное с присыпкой из белого шоколада</a>
         </h3>
         <a class="catalog-card__image" href="img/strawberry-ice-cream.jpg">
@@ -155,11 +158,11 @@
         </a>
         <p class="catalog-card__price">355 &#8381;<span class="catalog-card__weight">/кг</span>
         </p>
-        <a href="#">Быстрый просмотр</a>
+        <a class="catalog-card__btn btn" href="#">Быстрый просмотр</a>
         <p class="catalog-card__label">Хит продаж</p>
       </li>
       <li class="hits__item catalog-card">
-        <h3>
+        <h3 class="catalog-card__header">
           <a href="img/cream-ice-cream.jpg">Сливочное крем-брюле с карамельной подливкой</a>
         </h3>
         <a class="catalog-card__image" href="img/cream-ice-cream.jpg">
@@ -209,9 +212,9 @@
           <form action="#" method="post">
             <p>
               <label for="subscribe-form-email" class="visually-hidden">Электронная почта</label>
-              <input type="email" name="email" id="subscribe-form-email">
+              <input type="email" name="email" id="subscribe-form-email" placeholder="Электронная почта">
             </p>
-            <button type="submit">Отправить</button>
+            <button class="subscribe-form__btn btn" type="submit">Отправить</button>
           </form>
         </div>
       </div>
@@ -229,7 +232,7 @@
       <p class="feedback__phone">
         <a href="tel:8124502525">8 812 450-25-25</a><br> (с 10 до 20 ежедневно)
       </p>
-      <a href="#" class="feedback__link">Форма обратной связи</a>
+      <a href="#" class="feedback__link btn">Форма обратной связи</a>
     </div>
   </section>
 </main>
@@ -255,8 +258,10 @@
   </section>
   <section class="main-footer__item footer-copyright">
     <h2 class="visually-hidden">Авторские права разработчика сайта</h2>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">HTML academy</a>
-    <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+    <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML academy">
+    </a>
+    <p>Сделано в <a class="footer-copyright__html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
   </section>
 </footer>
 

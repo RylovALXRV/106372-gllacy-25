@@ -1,0 +1,511 @@
+body {
+  background-color: #849d8f;
+  color: #ffffff;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*      HEADER       */
+
+.menu,
+.submenu {
+  list-style-type: none;
+}
+
+.menu {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.menu .active {
+  background-color: #d07058;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu__item--current > .active {
+  font-weight: 700;
+}
+
+.menu__item > a {
+  color: #ffffff;
+}
+
+.menu__item > a[href]:hover,
+.menu__item > a[href]:focus {
+  background-color: #f7f6f3;
+  color: #323232;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu__item > a[href]:active {
+  background-color: #ededed;
+  box-shadow: inset 0 2px 1px 0 #696969;
+}
+
+.submenu {
+  background-color: #f8f7f4;
+  color: #323232;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.submenu__item--header {
+  border-bottom: 1px solid #d1d0ce;
+  font-weight: 700;
+}
+
+.submenu a {
+  color: #323232;
+  text-decoration: none;
+}
+
+.submenu a[href]:hover,
+.submenu a[href]:focus {
+  background-color: #fbded7;
+}
+
+.submenu a[href]:active {
+  background-color: #f6b5a5;
+}
+
+.user-navigation {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.user-navigation__list {
+  list-style-type: none;
+}
+
+.user-navigation__link {
+  background-color: #9db1a5;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.user-navigation__link:hover,
+.user-navigation__link:focus {
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
+.tooltip {
+  background-color: #f8f7f4;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.login-form a {
+  color: #323232;
+  font-size: 13px;
+}
+
+.login-form a:hover,
+.login-form a:focus,
+.login-form a:active {
+  color: #e84d37;
+}
+
+.tooltip input {
+  border: 1px solid #d3d3d2;
+  font: inherit;
+}
+
+.basket-block {
+  color: #323232;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.basket-block__total-price {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.order {
+  list-style-type: none;
+}
+
+.order__price {
+  color: #999999;
+}
+
+.btn {
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+  border: 0;
+  box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus {
+  background-image: linear-gradient(to top, #e74a35, #f26843), linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2));
+  box-shadow: 0 2px 2px 0 #ac1000;
+}
+
+.btn:active {
+  background-image: linear-gradient(to bottom, #e74a35, #f26843), linear-gradient(to bottom, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07));
+  box-shadow: inset 0 2px 2px 0 #942718;
+}
+
+/*        INDEX          */
+
+.slider__list {
+  list-style-type: none;
+}
+
+.slider h3 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.slider button {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.slider button:hover,
+.slider button:focus {
+  background-color: #b2c1b7;
+}
+
+.slider button:active {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.slider__btn {
+  color: #ffffff;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.banners {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.banners__item h3 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.banner--raspberries {
+  background: #2c0103 url("../img/raspberry-back.jpg") no-repeat;
+  height: 229px;
+  width: 560px;
+}
+
+.banner--chocolate {
+  background: #4e3b36 url("../img/chocolate-back.jpg") no-repeat;
+  height: 229px;
+  width: 560px;
+}
+
+.catalog-card a {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.catalog-card__header a:hover,
+.catalog-card__header a:focus,
+.catalog-card__header a:active {
+  color: #ffbc9e;
+}
+
+.catalog-card__price {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.catalog-card__weight {
+  font-size: 30px;
+}
+
+.catalog-card__label {
+  background: #ffffff url("../img/hit.svg") no-repeat;
+  height: 61px;
+  width: 61px;
+}
+
+.promotion-products {
+  background: #ede2c7 url("../img/wafer-back.jpg") no-repeat;
+  color: #323232;
+  height: 306px;
+  width: 1146px;
+}
+
+.promotion-products h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.promotion-products__list {
+  list-style-type: none;
+}
+
+.article-preview {
+  background: #ffffff url("../img/strawberry-back.jpg") no-repeat;
+  color: #323232;
+  height: 220px;
+  width: 560px;
+}
+
+.article-preview h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.article-preview__link {
+  color: #323232;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.article-preview__link:hover,
+.article-preview__link:focus,
+.article-preview__link:active {
+  color: #e84d37;
+}
+
+.subscribe-form {
+  background: #f8f7f4 url("../img/mail-back.svg") no-repeat;
+  height: 220px;
+  width: 560px;
+}
+
+.subscribe-form__wrapper {
+  background-color: #f8f7f4;
+}
+
+.subscribe-form p {
+  color: #5a5a5a;
+}
+
+.map {
+  background-color: #f7f1d9;
+  color: #323232;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.feedback {
+  background-color: #ffffff;
+}
+
+.feedback__header {
+  font-weight: 400;
+}
+
+.feedback__address {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.feedback__phone a {
+  color: #323232;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.modal {
+  background-color: #f8f7f4;
+}
+
+.modal-feedback fieldset {
+  border: 0;
+}
+
+.modal-feedback__legend {
+  color: #323232;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+/* не знаю как сделать в полять font-weight: 700 */
+.modal-feedback input,
+.modal-feedback textarea {
+  color: #323232;
+  font: inherit;
+  line-height: 24px;
+}
+
+/*       CATALOG      */
+
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.breadcrumbs a {
+  color: #ffffff;
+}
+
+.breadcrumbs a[href]:hover,
+.breadcrumbs a[href]:focus,
+.breadcrumbs a[href]:active {
+  color: #ffbc9e;
+}
+
+.contacts {
+  font-weight: 700;
+}
+
+.contacts span {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contacts a {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.filters {
+  font-weight: 500;
+}
+
+.filters fieldset {
+  border: 0;
+}
+
+.catalog-filter__legend {
+  line-height: 16px;
+}
+
+.catalog-filter__wrapper,
+.catalog-filter__list {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.price input {
+  background-color: transparent;
+  border: 0;
+}
+
+.filters input,
+.filters button {
+  color: #ffffff;
+  font: inherit;
+}
+
+.radio-filter,
+.checkbox-filter {
+  list-style-type: none;
+}
+
+.filters__btn {
+  background-color: rgba(255, 255, 255, 0.19);
+  border: 2px solid #ffffff;
+}
+
+.filters__btn:hover {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  color: #323232;
+  font-weight: 500;
+}
+
+.filters__btn:active {
+  background-color: #ededed;
+  box-shadow: inset 0 2px 1px 0 #696969;
+}
+
+.pagination {
+  list-style-type: none;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination__item a[href] {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination__item a[href]:hover,
+.pagination__item a[href]:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination__item a[href]:active {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.pagination__item--current a {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+/*       FOOTER       */
+
+.main-footer__item ul {
+  list-style-type: none;
+}
+
+.footer-social__list a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-info__list a {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.footer-info__list a:hover,
+.footer-info__list a:focus,
+.footer-info__list a:active,
+.footer-copyright__html-academy:hover,
+.footer-copyright__html-academy:focus,
+.footer-copyright__html-academy:active {
+  color: #ffbc9e;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.footer-copyright a {
+  color: #ffffff;
+}
