@@ -16,17 +16,17 @@
     </a>
     <ul class="navigation__list menu">
       <li class="menu__item menu__item--current">
-        <a class="active" href="#">Каталог</a>
+        <a class="menu__link active" href="#">Каталог</a>
         <ul class="menu__list submenu">
           <li class="submenu__item submenu__item--header">Новинки</li>
-          <li class="submenu__item"><a class="active">Сливочное</a></li>
-          <li class="submenu__item"><a href="#">Щербеты</a></li>
-          <li class="submenu__item"><a href="#">Фруктовый лед</a></li>
-          <li class="submenu__item"><a href="#">Мелорин</a></li>
+          <li class="submenu__item"><a class="submenu__link active">Сливочное</a></li>
+          <li class="submenu__item"><a class="submenu__link" href="#">Щербеты</a></li>
+          <li class="submenu__item"><a class="submenu__link" href="#">Фруктовый лед</a></li>
+          <li class="submenu__item"><a class="submenu__link" href="#">Мелорин</a></li>
         </ul>
       </li>
-      <li class="menu__item"><a href="#">Доставка и оплата</a></li>
-      <li class="menu__item"><a href="#">О Компании</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">О Компании</a></li>
     </ul>
     <div class="user-navigation">
       <ul class="user-navigation__list">
@@ -121,6 +121,7 @@
         </div>
       </fieldset>
       <section class="catalog-filter">
+        <h2 class="visually-hidden">Фильтр по цене товара</h2>
         <p class="catalog-filter__legend price">Цена:
           <label for="price-min-field" class="visually-hidden">Минимальное значение:</label>
           <input type="text" name="price-min" id="price-min-field" value="100"> руб.

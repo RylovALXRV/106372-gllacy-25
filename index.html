@@ -16,17 +16,17 @@
     </a>
     <ul class="navigation__list menu">
       <li class="menu__item">
-        <a href="#">Каталог</a>
+        <a class="menu__link" href="#">Каталог</a>
         <ul class="menu__list submenu">
           <li class="submenu__item submenu__item--header">Новинки</li>
-          <li class="submenu__item"><a href="catalog.html">Сливочное</a></li>
-          <li class="submenu__item"><a href="#">Щербеты</a></li>
-          <li class="submenu__item"><a href="#">Фруктовый лед</a></li>
-          <li class="submenu__item"><a href="#">Мелорин</a></li>
+          <li class="submenu__item"><a class="submenu__link" href="catalog.html">Сливочное</a></li>
+          <li class="submenu__item"><a class="submenu__link" href="#">Щербеты</a></li>
+          <li class="submenu__item"><a class="submenu__link" href="#">Фруктовый лед</a></li>
+          <li class="submenu__item"><a class="submenu__link" href="#">Мелорин</a></li>
         </ul>
       </li>
-      <li class="menu__item"><a href="#">Доставка и оплата</a></li>
-      <li class="menu__item"><a href="#">О Компании</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">О Компании</a></li>
     </ul>
     <div class="user-navigation">
       <ul class="user-navigation__list">
@@ -94,13 +94,13 @@
     </ul>
     <ul class="slider__controls">
       <li class="slider__item slider__item--current">
-        <button type="button">Первая кнопка слайдера</button>
+        <button class="slider__btn active" type="button">Первая кнопка слайдера</button>
       </li>
       <li class="slider__item">
-        <button type="button">Вторая кнопка слайдера</button>
+        <button class="slider__btn" type="button">Вторая кнопка слайдера</button>
       </li>
       <li class="slider__item">
-        <button type="button">Третья кнопка слайдера</button>
+        <button class="slider__btn" type="button">Третья кнопка слайдера</button>
       </li>
     </ul>
   </section>
@@ -222,17 +222,19 @@
   </section>
   <section class="map">
     <h2 class="visually-hidden">Местонахождение магазина Глейси</h2>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.321041106433245!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558496838221!5m2!1sru!2sru"
-      width="100%" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <div class="map__address feedback">
-      <h3 class="feedback__header">Адрес главного офиса<br> и офлайн-магазина:</h3>
-      <p class="feedback__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-      <p class="feedback__order-phone">Для заказов по телефону:</p>
-      <p class="feedback__phone">
-        <a href="tel:8124502525">8 812 450-25-25</a><br> (с 10 до 20 ежедневно)
-      </p>
-      <a href="#" class="feedback__link btn">Форма обратной связи</a>
+    <div class="map__wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.321041106433245!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1558496838221!5m2!1sru!2sru"
+        width="100%" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="map__address feedback">
+        <h3 class="feedback__header">Адрес главного офиса<br> и офлайн-магазина:</h3>
+        <p class="feedback__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
+        <p class="feedback__order-phone">Для заказов по телефону:</p>
+        <p class="feedback__phone">
+          <a href="tel:8124502525">8 812 450-25-25</a><br> (с 10 до 20 ежедневно)
+        </p>
+        <a href="#" class="feedback__link btn">Форма обратной связи</a>
+      </div>
     </div>
   </section>
 </main>
