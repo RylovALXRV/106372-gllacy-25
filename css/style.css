@@ -5,8 +5,14 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  margin: 0;
   padding: 0;
+}
+
+.container {
+  background-color: #849d8f;
+  margin: 0 auto;
+  padding: 0 27px;
+  width: 1146px;
 }
 
 .visually-hidden {
@@ -20,7 +26,21 @@ body {
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 /*      HEADER       */
+
+.main-header {
+  margin-bottom: 20px;
+  margin-top: 9px;
+}
+
+.main-header__wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
 
 .menu,
 .submenu {
@@ -32,6 +52,13 @@ body {
 .menu {
   font-weight: 700;
   line-height: 18px;
+  width: 380px;
+}
+
+.navigation__logo {
+  height: 62px;
+  margin-right: 24px;
+  width: 154px;
 }
 
 .menu .active {
@@ -91,6 +118,12 @@ body {
 .user-navigation {
   font-size: 14px;
   line-height: 16px;
+  margin-left: auto;
+}
+
+.user-navigation__list--wrapper {
+  display: flex;
+  width: 267px;
 }
 
 .user-navigation__list {
@@ -109,6 +142,11 @@ body {
 .user-navigation__link:hover,
 .user-navigation__link:focus {
   background-color: #f8f7f4;
+  color: #323232;
+}
+
+.user-navigation__link--full {
+  background-color: #f7f6f3;
   color: #323232;
 }
 
@@ -215,6 +253,12 @@ body {
 .banners {
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.banners__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .banners__item {
@@ -234,6 +278,28 @@ body {
   background: #4e3b36 url("../img/chocolate-back.jpg") repeat;
 }
 
+.hits {
+  margin-bottom: 40px;
+}
+
+.hits__list,
+.catalog__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hits__list--wrapper,
+.catalog__list--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog-card {
+  width: 267px;
+}
+
 .catalog-card__header a {
   color: #ffffff;
   font-weight: 500;
@@ -243,6 +309,12 @@ body {
 .catalog-card__header a:focus,
 .catalog-card__header a:active {
   color: #ffbc9e;
+}
+
+.catalog-card img {
+  height: 267px;
+  border-radius: 50%;
+  width: 267px;
 }
 
 .catalog-card__price {
@@ -263,9 +335,10 @@ body {
 
 .promotion-products {
   color: #323232;
+  margin-bottom: 40px;
 }
 
-.promotion-products__inner {
+.promotion-products__wrapper {
   background: #ede2c7 url("../img/wafer-back.jpg") repeat;
   width: 1146px;
 }
@@ -282,8 +355,13 @@ body {
   padding: 0;
 }
 
+.news {
+  margin-bottom: 39px;
+}
+
 .news__wrapper {
-  width: 1146px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .news__item {
@@ -330,6 +408,7 @@ body {
   color: #323232;
   font-size: 14px;
   line-height: 20px;
+  padding-left: 0;
 }
 
 .map__wrapper {
@@ -363,6 +442,10 @@ body {
   background-color: #f8f7f4;
 }
 
+.modal-feedback {
+  width: 478px;
+}
+
 .modal-feedback fieldset {
   border: 0;
 }
@@ -383,6 +466,11 @@ body {
 
 /*       CATALOG      */
 
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
 .breadcrumbs {
   list-style-type: none;
   margin: 0;
@@ -401,6 +489,7 @@ body {
 
 .contacts {
   font-weight: 700;
+  text-align-last: right;
 }
 
 .contacts span {
@@ -426,6 +515,10 @@ h1 {
 
 .filters fieldset {
   border: 0;
+}
+
+.catalog {
+  margin-bottom: 80px;
 }
 
 .catalog-filter__legend {
@@ -476,6 +569,7 @@ h1 {
   color: rgba(255, 255, 255, 0.2);
   list-style-type: none;
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 }
 
@@ -501,10 +595,20 @@ h1 {
 
 /*       FOOTER       */
 
+.main-footer__wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .main-footer__item ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.footer-social {
+  margin-right: 214px;
+  width: 185px;
 }
 
 .footer-social__list a {
@@ -530,6 +634,7 @@ h1 {
 .footer-copyright {
   font-size: 12px;
   line-height: 18px;
+  margin-left: auto;
 }
 
 .footer-copyright a {
