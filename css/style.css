@@ -8,11 +8,8 @@ body {
   padding: 0;
 }
 
-.container {
-  background-color: #849d8f;
-  margin: 0 auto;
-  padding: 0 27px;
-  width: 1146px;
+.hidden {
+  display: none;
 }
 
 .visually-hidden {
@@ -26,10 +23,6 @@ body {
   overflow: hidden;
 }
 
-.hidden {
-  display: none;
-}
-
 /*      HEADER       */
 
 .main-header {
@@ -40,6 +33,9 @@ body {
 .main-header__wrapper {
   display: flex;
   justify-content: flex-start;
+  margin: 0 auto;
+  padding: 0 27px;
+  width: 1146px;
 }
 
 .menu,
@@ -198,7 +194,8 @@ body {
   background-image: linear-gradient(to top, #e74a35, #f26843);
   border: 0;
   box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
-  color: #fefefe;
+  display: inline-block;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -218,6 +215,13 @@ body {
 
 /*        INDEX          */
 
+.contacts-wrapper,
+.slider-wrapper {
+  margin: 0 auto;
+  padding: 0 27px;
+  width: 1146px;
+}
+
 .slider__list {
   list-style-type: none;
   margin: 0;
@@ -228,6 +232,11 @@ body {
   font-size: 60px;
   font-weight: 700;
   line-height: 60px;
+}
+
+.ice-cream__btn {
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .slider__btn {
@@ -259,6 +268,9 @@ body {
 .banners__wrapper {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 27px;
+  width: 1146px;
 }
 
 .banners__item {
@@ -293,11 +305,21 @@ body {
 .catalog__list--wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 0 auto;
+  width: 1174px;
 }
 
 .catalog-card {
-  width: 267px;
+  text-align: center;
+  width: 293px;
+}
+
+.catalog-card:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.catalog-card:nth-child(4n) {
+  margin-right: 0;
 }
 
 .catalog-card__header a {
@@ -340,6 +362,8 @@ body {
 
 .promotion-products__wrapper {
   background: #ede2c7 url("../img/wafer-back.jpg") repeat;
+  margin: 0 auto;
+  padding: 0 27px;
   width: 1146px;
 }
 
@@ -362,6 +386,9 @@ body {
 .news__wrapper {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 27px;
+  width: 1146px;
 }
 
 .news__item {
@@ -404,6 +431,10 @@ body {
   color: #5a5a5a;
 }
 
+.subscribe-form__btn {
+  color: #fefefe;
+}
+
 .map {
   color: #323232;
   font-size: 14px;
@@ -413,7 +444,8 @@ body {
 
 .map__wrapper {
   background: #f7f1d9 url("../img/map.jpg") no-repeat;
-  width: 1225px;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .feedback {
@@ -464,11 +496,18 @@ body {
   line-height: 24px;
 }
 
+.modal-feedback__btn {
+  color: #fefefe;
+}
+
 /*       CATALOG      */
 
 .catalog-columns {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 27px;
+  width: 1146px;
 }
 
 .breadcrumbs {
@@ -507,10 +546,19 @@ body {
 h1 {
   font-size: 35px;
   line-height: 41px;
+  margin: 0 auto;
+  padding: 0 27px;
+  width: 1146px;
 }
 
 .filters {
   font-weight: 500;
+}
+
+.filters-wrapper {
+  margin: 0 auto;
+  padding: 0 27px;
+  width: 1146px;
 }
 
 .filters fieldset {
@@ -573,6 +621,13 @@ h1 {
   padding: 0;
 }
 
+.pagination__wrapper {
+  margin: 0 auto;
+  padding: 0 27px;
+  text-align: right;
+  width: 1146px;
+}
+
 .pagination__item a[href] {
   color: #ffffff;
   text-decoration: none;
@@ -598,6 +653,9 @@ h1 {
 .main-footer__wrapper {
   display: flex;
   justify-content: flex-start;
+  margin: 0 auto;
+  padding: 0 27px;
+  width: 1146px;
 }
 
 .main-footer__item ul {
