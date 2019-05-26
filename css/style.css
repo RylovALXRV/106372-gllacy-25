@@ -215,8 +215,8 @@ body {
 
 /*        INDEX          */
 
-.contacts-wrapper,
-.slider-wrapper {
+.page-content__header,
+.slider {
   margin: 0 auto;
   padding: 0 27px;
   width: 1146px;
@@ -237,6 +237,12 @@ body {
 .ice-cream__btn {
   font-size: 32px;
   line-height: 44px;
+}
+
+.slider__controls {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .slider__btn {
@@ -296,16 +302,11 @@ body {
 
 .hits__list,
 .catalog__list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.hits__list--wrapper,
-.catalog__list--wrapper {
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
   margin: 0 auto;
+  padding: 0;
   width: 1174px;
 }
 
@@ -502,12 +503,8 @@ body {
 
 /*       CATALOG      */
 
-.catalog-columns {
+.page-content__header {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 0 27px;
-  width: 1146px;
 }
 
 .breadcrumbs {
@@ -528,7 +525,7 @@ body {
 
 .contacts {
   font-weight: 700;
-  text-align-last: right;
+  margin-left: auto;
 }
 
 .contacts span {
@@ -538,6 +535,7 @@ body {
 
 .contacts a {
   color: #ffffff;
+  display: block;
   font-size: 22px;
   line-height: 24px;
   text-decoration: none;
@@ -553,9 +551,6 @@ h1 {
 
 .filters {
   font-weight: 500;
-}
-
-.filters-wrapper {
   margin: 0 auto;
   padding: 0 27px;
   width: 1146px;
@@ -616,13 +611,8 @@ h1 {
 .pagination {
   color: rgba(255, 255, 255, 0.2);
   list-style-type: none;
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-}
-
-.pagination__wrapper {
   margin: 0 auto;
+  margin-bottom: 30px;
   padding: 0 27px;
   text-align: right;
   width: 1146px;
