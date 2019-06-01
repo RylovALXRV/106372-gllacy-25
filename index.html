@@ -29,7 +29,7 @@
       <li class="menu__item"><a class="menu__link" href="#">О Компании</a></li>
     </ul>
     <div class="user-navigation">
-      <ul class="user-navigation__list user-navigation__list--wrapper">
+      <ul class="user-navigation__list">
         <li class="user-navigation__item user-navigation__search">
           <a class="user-navigation__link" href="#">
             <span class="visually-hidden">Поиск</span>
@@ -65,19 +65,21 @@
             Вход</a>
           <div class="tooltip login-form hidden">
             <form action="#" method="post">
-              <p>
+              <p class="login-form__item" >
                 <label for="login-form-email" class="visually-hidden">Электронная почта</label>
                 <input type="email" name="email" id="login-form-email" placeholder="Электронная почта">
               </p>
-              <p>
+              <p class="login-form__item" >
                 <label for="login-form-password" class="visually-hidden">Пароль</label>
                 <input type="password" name="password" id="login-form-password" placeholder="Пароль">
               </p>
-              <p>
+              <div class="login-form__item login-form__controls">
                 <button type="submit" class="login-form__btn btn">Войти</button>
-                <a href="#" class="login-form__restore">Забыли пароль?</a>
-                <a href="#" class="login-form__restore">Новая регистрация</a>
-              </p>
+                <p>
+                  <a href="#" class="login-form__restore">Забыли пароль?</a>
+                  <a href="#" class="login-form__restore">Новая регистрация</a>
+                </p>
+              </div>
             </form>
           </div>
         </li>
@@ -127,18 +129,20 @@
         <a class="ice-cream__btn btn" href="#">Давайте оба!</a>
       </li>
     </ul>
-    <ul class="slider__controls">
-      <li class="slider__item slider__item--current">
-        <button class="slider__btn active" type="button"><span class="visually-hidden">Первая кнопка слайдера</span>
-        </button>
-      </li>
-      <li class="slider__item">
-        <button class="slider__btn" type="button"><span class="visually-hidden">Вторая кнопка слайдера</span></button>
-      </li>
-      <li class="slider__item">
-        <button class="slider__btn" type="button"><span class="visually-hidden">Третья кнопка слайдера</span></button>
-      </li>
-    </ul>
+    <div class="controls-wrapper">
+      <ul class="slider__controls">
+        <li class="slider__item slider__item--current">
+          <button class="slider__btn active" type="button"><span class="visually-hidden">Первая кнопка слайдера</span>
+          </button>
+        </li>
+        <li class="slider__item">
+          <button class="slider__btn" type="button"><span class="visually-hidden">Вторая кнопка слайдера</span></button>
+        </li>
+        <li class="slider__item">
+          <button class="slider__btn" type="button"><span class="visually-hidden">Третья кнопка слайдера</span></button>
+        </li>
+      </ul>
+    </div>
   </section>
   <section class="banners">
     <h2 class="visually-hidden">Реклама магазина Глейси</h2>
@@ -147,13 +151,13 @@
         <h3>Малинка даром!</h3>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового
           варенья бесплатно.</p>
-        <a class="banner__btn btn" href="#">Хочу варенье</a>
+        <a class="banner__btn btn" href="#">Хочу варенье!</a>
       </div>
       <div class="banners__item banner banner--chocolate">
         <h3>Шоколадки даром!</h3>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки
           совершенно бесплатно.</p>
-        <a class="banner__btn btn" href="#">Хочу шоколадки</a>
+        <a class="banner__btn btn" href="#">Хочу шоколадки!</a>
       </div>
     </div>
   </section>
@@ -161,62 +165,70 @@
     <h2 class="visually-hidden">Хиты продаж</h2>
     <ul class="hits__list">
       <li class="hits__item catalog-card">
-        <h3 class="catalog-card__header">
-          <a href="img/orange-ice-cream.jpg">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-        </h3>
-        <a class="catalog-card__image" href="img/orange-ice-cream.jpg">
-          <img src="img/orange-ice-cream.jpg" width="267" height="267"
-               alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-        </a>
-        <p class="catalog-card__price">310 &#8381;<span class="catalog-card__weight">/кг</span>
-        </p>
-        <a class="catalog-card__btn btn" href="#">Быстрый просмотр</a>
-        <p class="catalog-card__label">Хит продаж</p>
+        <div class="catalog-card__inner">
+          <h3 class="catalog-card__header">
+            <a href="img/orange-ice-cream.jpg">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          </h3>
+          <a class="catalog-card__image" href="img/orange-ice-cream.jpg">
+            <img src="img/orange-ice-cream.jpg" width="267" height="267"
+                 alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+          </a>
+          <p class="catalog-card__price">310&#8381;<span class="catalog-card__weight">/кг</span>
+          </p>
+          <a class="catalog-card__btn btn" href="#">Быстрый просмотр</a>
+          <p class="catalog-card__label">Хит продаж</p>
+        </div>
       </li>
       <li class="hits__item catalog-card">
-        <h3 class="catalog-card__header">
-          <a href="img/coffee-ice-cream.jpg">Сливочно-кофейное с кусочками шоколада</a>
-        </h3>
-        <a class="catalog-card__image" href="img/coffee-ice-cream.jpg">
-          <img src="img/coffee-ice-cream.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-        </a>
-        <p class="catalog-card__price">380 &#8381;<span class="catalog-card__weight">/кг</span>
-        </p>
-        <a class="catalog-card__btn btn" href="#">Быстрый просмотр</a>
-        <p class="catalog-card__label">Хит продаж</p>
+        <div class="catalog-card__inner">
+          <h3 class="catalog-card__header">
+            <a href="img/coffee-ice-cream.jpg">Сливочно-кофейное с кусочками шоколада</a>
+          </h3>
+          <a class="catalog-card__image" href="img/coffee-ice-cream.jpg">
+            <img src="img/coffee-ice-cream.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+          </a>
+          <p class="catalog-card__price">380&#8381;<span class="catalog-card__weight">/кг</span>
+          </p>
+          <a class="catalog-card__btn btn" href="#">Быстрый просмотр</a>
+          <p class="catalog-card__label">Хит продаж</p>
+        </div>
       </li>
       <li class="hits__item catalog-card">
-        <h3 class="catalog-card__header">
-          <a href="img/strawberry-ice-cream.jpg">Сливочно-клубничное с присыпкой из белого шоколада</a>
-        </h3>
-        <a class="catalog-card__image" href="img/strawberry-ice-cream.jpg">
-          <img src="img/strawberry-ice-cream.jpg" width="267" height="267"
-               alt="Сливочно-клубничное с присыпкой из белого шоколада">
-        </a>
-        <p class="catalog-card__price">355 &#8381;<span class="catalog-card__weight">/кг</span>
-        </p>
-        <a class="catalog-card__btn btn" href="#">Быстрый просмотр</a>
-        <p class="catalog-card__label">Хит продаж</p>
+        <div class="catalog-card__inner">
+          <h3 class="catalog-card__header">
+            <a href="img/strawberry-ice-cream.jpg">Сливочно-клубничное с присыпкой из белого шоколада</a>
+          </h3>
+          <a class="catalog-card__image" href="img/strawberry-ice-cream.jpg">
+            <img src="img/strawberry-ice-cream.jpg" width="267" height="267"
+                 alt="Сливочно-клубничное с присыпкой из белого шоколада">
+          </a>
+          <p class="catalog-card__price">355&#8381;<span class="catalog-card__weight">/кг</span>
+          </p>
+          <a class="catalog-card__btn btn" href="#">Быстрый просмотр</a>
+          <p class="catalog-card__label">Хит продаж</p>
+        </div>
       </li>
       <li class="hits__item catalog-card">
-        <h3 class="catalog-card__header">
-          <a href="img/cream-ice-cream.jpg">Сливочное крем-брюле с карамельной подливкой</a>
-        </h3>
-        <a class="catalog-card__image" href="img/cream-ice-cream.jpg">
-          <img src="img/cream-ice-cream.jpg" width="267" height="267"
-               alt="Сливочное крем-брюле с карамельной подливкой">
-        </a>
-        <p class="catalog-card__price">415 &#8381;<span class="catalog-card__weight">/кг</span>
-        </p>
-        <a class="catalog-card__btn btn" href="#">Быстрый просмотр</a>
-        <p class="catalog-card__label">Хит продаж</p>
+        <div class="catalog-card__inner">
+          <h3 class="catalog-card__header">
+            <a href="img/cream-ice-cream.jpg">Сливочное крем-брюле с карамельной подливкой</a>
+          </h3>
+          <a class="catalog-card__image" href="img/cream-ice-cream.jpg">
+            <img src="img/cream-ice-cream.jpg" width="267" height="267"
+                 alt="Сливочное крем-брюле с карамельной подливкой">
+          </a>
+          <p class="catalog-card__price">415&#8381;<span class="catalog-card__weight">/кг</span>
+          </p>
+          <a class="catalog-card__btn btn" href="#">Быстрый просмотр</a>
+          <p class="catalog-card__label">Хит продаж</p>
+        </div>
       </li>
     </ul>
   </section>
   <section class="promotion-products">
     <h2 class="visually-hidden">Продвижение товара</h2>
     <div class="promotion-products__wrapper">
-      <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+      <h2>Магазин Глэйси — это онлайн - и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
       <ul class="promotion-products__list features">
         <li class="features__item features__item--ice-cream">Все наше мороженое изготавливается на собственном
           производстве, с использованием современного оборудования
@@ -261,7 +273,6 @@
       </div>
     </div>
   </section>
-
   <section class="map">
     <h2 class="visually-hidden">Местонахождение магазина Глейси</h2>
     <iframe
@@ -360,8 +371,8 @@
       <h2 class="visually-hidden">Информация</h2>
       <ul class="footer-info__list">
         <li><a class="footer-info__heart" href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
+        <li><a href="#">О производстве</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
     </section>
