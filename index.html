@@ -16,7 +16,7 @@
     </a>
     <ul class="navigation__list menu">
       <li class="menu__item menu__item--catalog">
-        <a class="menu__link" href="#">Каталог</a>
+        <a class="menu__link menu__link--catalog" href="#">Каталог</a>
         <ul class="menu__list submenu">
           <li class="submenu__item submenu__item--header"><a>Новинки</a></li>
           <li class="submenu__item"><a class="submenu__link" href="catalog.html">Сливочное</a></li>
@@ -43,7 +43,7 @@
               </g>
             </svg>
           </a>
-          <div class="tooltip search-form hidden">
+          <div class="tooltip search-form">
             <form action="#" method="get">
               <label for="search-field" class="visually-hidden">Поле поиска</label>
               <input type="search" name="search" id="search-field" placeholder="Что ищем?">
@@ -63,7 +63,7 @@
               </g>
             </svg>
             Вход</a>
-          <div class="tooltip login-form hidden">
+          <div class="tooltip login-form">
             <form action="#" method="post">
               <p class="login-form__item" >
                 <label for="login-form-email" class="visually-hidden">Электронная почта</label>
@@ -73,7 +73,7 @@
                 <label for="login-form-password" class="visually-hidden">Пароль</label>
                 <input type="password" name="password" id="login-form-password" placeholder="Пароль">
               </p>
-              <div class="login-form__item login-form__controls">
+              <div class="login-form__controls">
                 <button type="submit" class="login-form__btn btn">Войти</button>
                 <p>
                   <a href="#" class="login-form__restore">Забыли пароль?</a>
@@ -113,17 +113,17 @@
   <section class="slider">
     <h2 class="visually-hidden">Слайдер продукции магазина Глейси</h2>
     <ul class="slider__list ice-cream">
-      <li class="ice-cream__item">
+      <li class="ice-cream__item" data-ice-cream="ice-cream-1">
         <h3 class="ice-cream__header">Крем-брюле и пломбир с малиновым джемом</h3>
         <img src="img/ice-cream-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
         <a class="ice-cream__btn btn" href="#">Давайте оба!</a>
       </li>
-      <li class="ice-cream__item hidden">
+      <li class="ice-cream__item hidden" data-ice-cream="ice-cream-2">
         <h3 class="ice-cream__header">Шоколадный пломбир и лимонный сорбет</h3>
         <img src="img/ice-cream-2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
         <a class="ice-cream__btn btn" href="#">Давайте оба!</a>
       </li>
-      <li class="ice-cream__item hidden">
+      <li class="ice-cream__item hidden" data-ice-cream="ice-cream-3">
         <h3 class="ice-cream__header">Пломбир с помадкой и клубничный щербет</h3>
         <img src="img/ice-cream-3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
         <a class="ice-cream__btn btn" href="#">Давайте оба!</a>
@@ -132,14 +132,14 @@
     <div class="controls-wrapper">
       <ul class="slider__controls">
         <li class="slider__item slider__item--current">
-          <button class="slider__btn active" type="button"><span class="visually-hidden">Первая кнопка слайдера</span>
+          <button class="slider__btn active" type="button" data-ice-cream="ice-cream-1"><span class="visually-hidden">Первая кнопка слайдера</span>
           </button>
         </li>
         <li class="slider__item">
-          <button class="slider__btn" type="button"><span class="visually-hidden">Вторая кнопка слайдера</span></button>
+          <button class="slider__btn" type="button" data-ice-cream="ice-cream-2"><span class="visually-hidden">Вторая кнопка слайдера</span></button>
         </li>
         <li class="slider__item">
-          <button class="slider__btn" type="button"><span class="visually-hidden">Третья кнопка слайдера</span></button>
+          <button class="slider__btn" type="button" data-ice-cream="ice-cream-3"><span class="visually-hidden">Третья кнопка слайдера</span></button>
         </li>
       </ul>
     </div>
@@ -263,7 +263,7 @@
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
           <form action="#" method="post">
-            <p class="subscribe-form__input">
+            <p class="subscribe-form__field">
               <label for="subscribe-form-email" class="visually-hidden">Электронная почта</label>
               <input type="email" name="email" id="subscribe-form-email" placeholder="Электронная почта">
             </p>
@@ -379,7 +379,7 @@
     <section class="main-footer__item footer-copyright">
       <h2 class="visually-hidden">Авторские права разработчика сайта</h2>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML academy">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML academy">
       </a>
       <p>Сделано в <a class="footer-copyright__html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML
         Academy</a> © 2019</p>
@@ -387,30 +387,34 @@
   </div>
 </footer>
 
-<section class="modal modal-feedback hidden">
-  <h2 class="visually-hidden">Обратная связь</h2>
-  <form action="#" method="post" class="modal-feedback__form">
-    <fieldset class="modal-feedback__fieldset">
-      <legend class="modal-feedback__legend">Мы обязательно вам ответим!</legend>
-      <div class="modal-feedback__main-info">
-        <p>
-          <label for="feedback-name" class="visually-hidden">Имя</label>
-          <input type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
+<div class="modal-wrapper">
+  <section class="modal modal-feedback hidden">
+    <h2 class="visually-hidden">Обратная связь</h2>
+    <form action="#" method="post" class="modal-feedback__form">
+      <fieldset class="modal-feedback__fieldset">
+        <legend class="modal-feedback__legend">Мы обязательно вам ответим!</legend>
+        <div class="modal-feedback__main-info">
+          <p>
+            <label for="feedback-name" class="visually-hidden">Имя</label>
+            <input type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
+          </p>
+          <p>
+            <label for="feedback-email" class="visually-hidden">Электронная почта</label>
+            <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
+          </p>
+        </div>
+        <p class="modal-feedback__text">
+          <label for="feedback-wishes" class="visually-hidden">Пожелания</label>
+          <textarea name="feedback-wishes" id="feedback-wishes" placeholder="Напишите что-нибудь..."></textarea>
         </p>
-        <p>
-          <label for="feedback-email" class="visually-hidden">Электронная почта</label>
-          <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
-        </p>
-      </div>
-      <p>
-        <label for="feedback-wishes" class="visually-hidden">Пожелания</label>
-        <textarea name="feedback-wishes" id="feedback-wishes" placeholder="Напишите что-нибудь..."></textarea>
-      </p>
-      <button type="submit" class="modal-feedback__btn btn">Отправить</button>
-    </fieldset>
-  </form>
-  <button class="modal__btn" type="button">Закрыть</button>
-</section>
+        <button type="submit" class="modal-feedback__btn btn">Отправить</button>
+      </fieldset>
+    </form>
+    <button class="modal__btn js-remove" type="button">Закрыть</button>
+  </section>
+</div>
+
+<script src="js/script.js"></script>
 
 </body>
 </html>

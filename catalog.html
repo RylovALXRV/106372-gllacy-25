@@ -31,7 +31,7 @@
     <div class="user-navigation">
       <ul class="user-navigation__list">
         <li class="user-navigation__item user-navigation__search">
-          <a class="user-navigation__link" href="#">
+          <a class="user-navigation__link user-navigation__link--search" href="#">
             <span class="visually-hidden">Поиск</span>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                  y="0px" width="17px"
@@ -43,7 +43,7 @@
               </g>
             </svg>
           </a>
-          <div class="tooltip search-form hidden">
+          <div class="tooltip search-form">
             <form action="#" method="get">
               <label for="search-field" class="visually-hidden">Поле поиска</label>
               <input type="search" name="search" id="search-field" placeholder="Что ищем?">
@@ -63,7 +63,7 @@
               </g>
             </svg>
             Вход</a>
-          <div class="tooltip login-form hidden">
+          <div class="tooltip login-form">
             <form action="#" method="post">
               <p>
                 <label for="login-form-email" class="visually-hidden">Электронная почта</label>
@@ -85,7 +85,7 @@
         </li>
         <li class="user-navigation__item user-navigation__basket">
           <a class="user-navigation__link user-navigation__link--full" href="#">2 товара</a>
-          <div class="tooltip basket-block hidden">
+          <div class="tooltip basket-block">
             <ul class="basket-block__list order">
               <li class="basket-block__item">
                 <button type="button" class="order__remove" aria-label="Удалить товар">Удалить товар</button>
@@ -483,7 +483,7 @@
     <section class="main-footer__item footer-copyright">
       <h2 class="visually-hidden">Авторские права разработчика сайта</h2>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy-small.svg" width="108" height="39" alt="Логотип HTML academy">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML academy">
       </a>
       <p>Сделано в <a class="footer-copyright__html-academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML
         Academy</a> © 2019</p>
