@@ -64,14 +64,14 @@
             </svg>
             Вход</a>
           <div class="tooltip login-form">
-            <form action="#" method="post">
+            <form action="https://echo.htmlacademy.ru" method="post">
               <p class="login-form__item" >
                 <label for="login-form-email" class="visually-hidden">Электронная почта</label>
-                <input type="email" name="email" id="login-form-email" placeholder="Электронная почта">
+                <input type="email" name="email" id="login-form-email" placeholder="Электронная почта" required>
               </p>
               <p class="login-form__item" >
                 <label for="login-form-password" class="visually-hidden">Пароль</label>
-                <input type="password" name="password" id="login-form-password" placeholder="Пароль">
+                <input type="password" name="password" id="login-form-password" placeholder="Пароль" required>
               </p>
               <div class="login-form__controls">
                 <button type="submit" class="login-form__btn btn">Войти</button>
@@ -262,10 +262,10 @@
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
             Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
-          <form action="#" method="post">
+          <form action="https://echo.htmlacademy.ru" method="post">
             <p class="subscribe-form__field">
               <label for="subscribe-form-email" class="visually-hidden">Электронная почта</label>
-              <input type="email" name="email" id="subscribe-form-email" placeholder="Электронная почта">
+              <input type="email" name="email" id="subscribe-form-email" placeholder="Электронная почта" required>
             </p>
             <button class="subscribe-form__btn btn" type="submit">Отправить</button>
           </form>
@@ -390,17 +390,17 @@
 <div class="modal-wrapper">
   <section class="modal modal-feedback hidden">
     <h2 class="visually-hidden">Обратная связь</h2>
-    <form action="#" method="post" class="modal-feedback__form">
+    <form action="https://echo.htmlacademy.ru" method="post" class="modal-feedback__form">
       <fieldset class="modal-feedback__fieldset">
         <legend class="modal-feedback__legend">Мы обязательно вам ответим!</legend>
         <div class="modal-feedback__main-info">
           <p>
             <label for="feedback-name" class="visually-hidden">Имя</label>
-            <input type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
+            <input type="text" name="name" id="feedback-name" placeholder="Как вас зовут?" required>
           </p>
           <p>
             <label for="feedback-email" class="visually-hidden">Электронная почта</label>
-            <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
+            <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?" required>
           </p>
         </div>
         <p class="modal-feedback__text">
