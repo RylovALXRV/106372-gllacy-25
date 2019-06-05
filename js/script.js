@@ -30,7 +30,7 @@ function changeSlider (elem) {
 
 function createAnimation () {
   var imgElement = currentItem.querySelector('img');
-  imgElement.classList.add('animation');
+  imgElement.classList.add('slider-animation');
 }
 
 
@@ -70,6 +70,8 @@ feedbackLinkElement.addEventListener('click', function (event) {
   var coordsModalElement = getCoordsElement(modalFeedbackElement);
 
   modalWrapperElement.classList.add('overlay');
+  modalFeedbackElement.classList.add('modal-animation');
+
   modalFeedbackElement.style.left = coordsModalElement.left + 'px';
   modalFeedbackElement.style.top = coordsModalElement.top + 'px';
 });
@@ -80,5 +82,4 @@ document.addEventListener('click', function (event) {
     modalWrapperElement.classList.remove('overlay');
     target.parentNode.classList.add("hidden");
   }
-  console.log('hi');
 });
