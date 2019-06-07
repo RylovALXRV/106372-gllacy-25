@@ -1128,6 +1128,7 @@ body {
   padding: 6px;
 
   background: #f8f7f4 url("../img/mail-back.svg") no-repeat;
+  background-position: center;
   -webkit-background-size: cover;
   background-size: cover;
 }
@@ -1481,10 +1482,14 @@ body {
   padding-right: 21px;
 }
 
-.breadcrumbs__item--next::after {
+.breadcrumbs__item::after {
   content: "»";
   position: absolute;
   right: 7px;
+}
+
+.breadcrumbs__item:last-child::after {
+  content: "";
 }
 
 .breadcrumbs a {
@@ -1562,12 +1567,12 @@ h1 {
 
 .catalog-filter--filler {
   margin-bottom: 0;
+  margin-right: 12px;
 }
 
 .catalog-filter__wrapper,
 .catalog-filter__list {
   border-radius: 25px;
-  min-height: 36px;
 
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -1645,6 +1650,7 @@ h1 {
 .range {
   position: relative;
 
+  min-height: 36px;
   width: 219px;
 
   font-size: 0;
@@ -1709,11 +1715,11 @@ h1 {
 }
 
 .range__btn--left {
-  left: 34px;
+  left: 35px;
 }
 
 .range__btn--right {
-  right: 67px;
+  right: 66px;
 }
 
 .radio-filter,
@@ -1728,7 +1734,7 @@ h1 {
   flex-wrap: wrap;
 
   margin: 0;
-  padding: 0;
+  padding: 7px 0 0 13px;
 
   list-style-type: none;
 }
@@ -1737,22 +1743,23 @@ h1 {
 .checkbox-filter__item {
   position: relative;
 
-  padding: 7px 0 7px 46px;
+  margin: 0 17px 7px 0;
 }
 
 .radio-filter {
-  width: 415px;
+  width: 401px;
 }
 
-.radio-filter__item {
-  padding-right: 3px;
+.radio-filter__item,
+.checkbox-filter__item {
+  padding-left: 32px;
 }
 
 .radio-filter label::before {
   content: "";
   position: absolute;
-  left: 14px;
-  top: 7px;
+  left: 1px;
+  top: 0;
 
   border: 3px solid #ffffff;
   border-radius: 50%;
@@ -1765,8 +1772,8 @@ h1 {
 .radio-filter__input:checked ~ .radio-filter__label::before {
   content: "";
   position: absolute;
-  left: 14px;
-  top: 7px;
+  left: 1px;
+  top: 0;
 
   border: 3px solid #ffffff;
   border-radius: 50%;
@@ -1779,8 +1786,8 @@ h1 {
 .radio-filter__input:checked ~ .radio-filter__label::after {
   content: "";
   position: absolute;
-  top: 14px;
-  left: 21px;
+  top: 7px;
+  left: 8px;
 
   border-radius: 50%;
   height: 8px;
@@ -1831,18 +1838,19 @@ h1 {
 }
 
 .checkbox-filter {
-  width: 702px;
+  padding-left: 15px;
+  width: 690px;
 }
 
 .checkbox-filter__item {
-  padding-right: 8px;
+  margin-right: 21px;
 }
 
 .checkbox-filter__label::before {
   content: "";
   position: absolute;
-  left: 14px;
-  top: 7px;
+  left: 0;
+  top: 1px;
 
   height: 21px;
   width: 22px;
@@ -1859,8 +1867,8 @@ h1 {
 .checkbox-filter__input:checked ~ .checkbox-filter__label::before {
   content: "";
   position: absolute;
-  left: 14px;
-  top: 7px;
+  left: 0;
+  top: 1px;
 
   border: 0;
   height: 21px;
