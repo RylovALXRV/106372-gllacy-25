@@ -1318,6 +1318,7 @@ body {
 
 .modal-wrapper {
   display: flex;
+  flex-direction: column;
 
   overflow: auto;
 }
@@ -1839,11 +1840,11 @@ h1 {
 
 .checkbox-filter {
   padding-left: 15px;
-  width: 690px;
+  width: 687px;
 }
 
 .checkbox-filter__item {
-  margin-right: 21px;
+  margin-right: 20px;
 }
 
 .checkbox-filter__label::before {
